@@ -1,5 +1,6 @@
 package Duel;
 
-public class Duel {
+public class Duel 
+{
 
 }
