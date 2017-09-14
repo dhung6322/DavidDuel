@@ -8,11 +8,20 @@ public class CharacterB implements Dueler{
 	public void taunt() {
 		System.out.println("Come at me");
 	}
-	public String getName{
+	public String getName(){
 		
-		return "John";
+		System.out.println("John");
+		return "";
 	}
 	public void setStartingHP(int hp) {
 		hp = 100;
 	}
+	public int getHP() {
+		return 100;
+	}
+	public boolean determineIfOpponentIsFair(Dueler d, int target) {
+		return false;
+		
+	}
+
 }
