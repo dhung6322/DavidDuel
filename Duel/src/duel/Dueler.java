@@ -1,4 +1,4 @@
-package Duel;
+package duel;
 
 public interface Dueler {
 
