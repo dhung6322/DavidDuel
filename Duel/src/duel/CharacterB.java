@@ -6,10 +6,11 @@ public class CharacterB implements Dueler{
 		
 	}
 	public void taunt() {
-		System.out.print.ln("Come at me");
+		System.out.println("Come at me");
 	}
 	public String getName{
 		
+		return "John";
 	}
 	public void setStartingHP(int hp) {
 		hp = 100;
