@@ -5,7 +5,7 @@ public class CharacterA implements Dueler{
 		
 	}
 	public void taunt() {
-		System.out.println("Come at me");
+		System.out.println("Ez");
 	}
 	public String getName(){
 		
