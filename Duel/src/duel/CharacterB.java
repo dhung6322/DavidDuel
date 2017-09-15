@@ -3,15 +3,14 @@ package duel;
 public class CharacterB implements Dueler{
 
 	public CharacterB() {
-		
 	}
 	public void taunt() {
 		System.out.println("Come at me");
 	}
 	public String getName(){
 		
-		System.out.println("John");
-		return "";
+		//System.out.println("John");
+		return "John";
 	}
 	public void setStartingHP(int hp) {
 		hp = 100;
