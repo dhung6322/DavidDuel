@@ -20,7 +20,7 @@ public class Duel {
 	}
 	
 	public Duel() {
-		d1 = new CharacterA();
+		d1 = new CharacterA(); 
 		d2 = new CharacterB();
 	}
 	
