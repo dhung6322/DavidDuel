@@ -1,7 +1,7 @@
 package duel;
 
 public class CharacterB implements Dueler{
-
+	private int hp = 100;
 	public CharacterB() {
 	}
 	public void taunt() {
@@ -13,10 +13,10 @@ public class CharacterB implements Dueler{
 		return "John";
 	}
 	public void setStartingHP(int hp) {
-		hp = 100;
+		this.hp = 100;
 	}
 	public int getHP() {
-		return 100;
+		return this.hp;
 	}
 	public boolean determineIfOpponentIsFair(Dueler d, int target) {
 		return false;
