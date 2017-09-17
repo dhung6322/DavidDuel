@@ -12,13 +12,12 @@ public class CharacterA implements Dueler {
 	}
 
 	public void setStartingHP(int hp) {
-
-		
+		this.hp = 100;	
 	}
 
 
 	public int getHP() {
-		return 0;
+		return this.hp;
 	}
 
 
