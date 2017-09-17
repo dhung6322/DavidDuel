@@ -9,11 +9,10 @@ public class CharacterB implements Dueler{
 	}
 	public String getName(){
 		
-		//System.out.println("John");
 		return "John";
 	}
 	public void setStartingHP(int hp) {
-		this.hp = 100;
+		hp = this.hp;
 	}
 	public int getHP() {
 		return this.hp;
