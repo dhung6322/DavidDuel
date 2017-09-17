@@ -21,5 +21,11 @@ public class CharacterB implements Dueler{
 		return (d.getHP() == target);
 		
 	} 
+	public int getAction(Object caller) {
+		return 1;
+	}
+	public void hit(Object caller) {
+		//code
+	}
 
 }
