@@ -8,7 +8,7 @@ public class CharacterA implements Dueler {
 
 
 	public String getName() {
-		return null;
+		return "Bob";
 	}
 
 	public void setStartingHP(int hp) {
