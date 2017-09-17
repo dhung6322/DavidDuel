@@ -23,7 +23,9 @@ public class CharacterA implements Dueler {
 
 	public boolean determineIfOpponentIsFair(Dueler d, int target) {
 
-		return false;
+		if(d.this.hp == target){
+			return true;
+		}
 	}
 
 }
