@@ -2,12 +2,15 @@ package duel;
 
 public class CharacterB implements Dueler{
 	private int hp = 100;
+	private String charTaunts[] = {"Too good for you", "I'm the best", "Best dueler out there"};
 	
 	
 	public CharacterB() {
 	}
 	public void taunt() {
-		System.out.println("Too good for you");
+		//System.out.println("Too good for you");
+		System.out.println(this.charTaunts[0]);
+		
 	}
 	public String getName(){
 		
@@ -46,10 +49,10 @@ public class CharacterB implements Dueler{
 		return 3;
 	}
 	public void hit(Object caller) {
-		/*if (caller != this.getName())
+		if (caller != this.getName())
 		{
 			//do nothing
-		}*/
+		}
 		
 			this.hp = this.hp - 10;
 		
