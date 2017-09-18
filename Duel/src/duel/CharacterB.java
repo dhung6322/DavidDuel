@@ -3,13 +3,18 @@ package duel;
 public class CharacterB implements Dueler{
 	private int hp = 100;
 	private String charTaunts[] = {"Too good for you", "I'm the best", "Best dueler out there"};
-	
+	private int x = 0;
 	
 	public CharacterB() {
 	}
 	public void taunt() {
 		//System.out.println("Too good for you");
-		System.out.println(this.charTaunts[0]);
+		System.out.println(this.charTaunts[x]);
+		x = x+1;
+		if (x >= 2)
+		{
+			x = 0;
+		}
 		
 	}
 	public String getName(){
