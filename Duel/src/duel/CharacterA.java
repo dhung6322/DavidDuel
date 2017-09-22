@@ -29,3 +29,30 @@ public class CharacterA implements Dueler {
 	}
 
 }
+public int getAction(Object caller) {
+		if (caller != this.getName()) 
+		{
+			if(Math.random() < .3)
+			{
+				return 0;
+			}
+			if(Math.random() < .6)
+			{
+				return 1;
+			}
+			return 2;
+		}
+		return 3;
+	}
+	public void hit(Object caller) {
+		if (caller != this.getName())
+		{
+		
+		}
+		
+			this.hp = this.hp - 10;
+		
+		
+	}
+
+}
