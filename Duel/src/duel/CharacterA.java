@@ -1,9 +1,16 @@
 package duel;
 
 public class CharacterA implements Dueler {
+	private int hp = 100;
+	private String aTaunts[] =  {"Can't touch this", "That all you got?", "You should just give up", "This is too easy"};
+	private int x = 0;
 
 	public void taunt() {
-		System.out.println("Can't touch this");	
+		System.out.println(this.charTaunts[x]);
+		x = x + 1;
+		if (x > 3){
+			x = 0;
+		}
 	}
 
 
@@ -12,7 +19,7 @@ public class CharacterA implements Dueler {
 	}
 
 	public void setStartingHP(int hp) {
-		this.hp = 100;	
+		hp = this.hp	
 	}
 
 
@@ -23,7 +30,7 @@ public class CharacterA implements Dueler {
 
 	public boolean determineIfOpponentIsFair(Dueler d, int target) {
 
-		if(d.gethp() == target){
+		if(d.getHP() == target){
 			return true;
 		}
 	}
