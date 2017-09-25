@@ -43,7 +43,7 @@ public class CharacterB implements Dueler{
 		if (caller != this.getName()) 
 		{
 			
-			if(Math.random() < .3)
+			if(Math.random() < .3 && !isLoaded)
 			{
 				isLoaded = true;
 				return 0;
