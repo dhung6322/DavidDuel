@@ -5,6 +5,9 @@ public class CharacterB implements Dueler{
 	private String charTaunts[] = {"Too good for you", "I'm the best", "Best dueler out there"};
 	private int x = 0;
 	private boolean isLoaded = false;
+	private float ONE = 1;
+	private float THREE = 3;
+	private float ONETHIRD = ONE / THREE ;
 	
 	public CharacterB() {
 	}
@@ -29,21 +32,13 @@ public class CharacterB implements Dueler{
 		return this.hp;
 	}
 	public boolean determineIfOpponentIsFair(Dueler d, int target) {
-		/*if (d.getHP() == target)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}*/
 		return (d.getHP() == target);
 	}
 	public int getAction(Object caller) {
 		if (caller != this.getName()) 
 		{
 			
-			if(Math.random() < .3 && !isLoaded)
+			if(Math.random() <  ONETHIRD                 && !isLoaded)
 			{
 				isLoaded = true;
 				return 0;
