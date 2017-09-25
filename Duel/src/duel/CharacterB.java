@@ -4,6 +4,7 @@ public class CharacterB implements Dueler{
 	private int hp = 100;
 	private String charTaunts[] = {"Too good for you", "I'm the best", "Best dueler out there"};
 	private int x = 0;
+	private boolean isLoaded = false;
 	
 	public CharacterB() {
 	}
@@ -41,13 +42,20 @@ public class CharacterB implements Dueler{
 	public int getAction(Object caller) {
 		if (caller != this.getName()) 
 		{
+			
 			if(Math.random() < .3)
 			{
+				isLoaded = true;
 				return 0;
 			}
-			if(Math.random() < .6)
+			if(isLoaded)
 			{
-				return 1;
+				if(Math.random() < .5)
+				{
+					isLoaded = false;
+					return 1;
+				}
+				return 2;
 			}
 			return 2;
 		}
